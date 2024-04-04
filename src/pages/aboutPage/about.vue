@@ -1,0 +1,190 @@
+<template>
+  <div class="wrapper_one container">
+    <div class="inner_card  py-5">
+      <div class="inner_content">
+        <h1>История</h1>
+        <p>Наша онлайн площадка является результатом долгого пути развития, начиная с нашей первоначальной платформы "uchitelya.kz". Наш опыт в ведении образовательных ресурсов в Казахстане вдохновил нас создать новую онлайн площадку, предлагающий высококачественное образование.</p>
+      </div>
+      <div class="w-50"></div>
+    </div>
+    <div class="inner_card py-5">
+      <div class="w-50">
+      </div>
+      <div class="inner_content">
+        <h1>Миссия и Ценности</h1>
+        <p>Мы стремимся предоставить доступное, качественное и инновационное образование, формируя будущее лидеров и профессионалов. Наши ценности включают в себя стремление к знаниям, разнообразию и развитию каждого студента.</p>
+      </div>
+    </div>
+    <div class="inner_card py-5">
+      <div class="inner_content">
+        <h1>Образовательные Программы</h1>
+        <p>Наш площадка предлагает широкий спектр образовательных программ, адаптированных к современным требованиям рынка труда. Мы гордимся тем, что предоставляем студентам возможность выбора среди инновационных курсов, поддерживаемых опытными преподавателями.</p>
+      </div>
+      <div class="w-50"></div>
+    </div>
+    <div class="inner_card py-5">
+      <div class="w-50">
+      </div>
+      <div class="inner_content">
+        <h1>Инновации и Технологии</h1>
+        <p>Мы осуществляем обучение с использованием передовых технологий, предлагая уникальные онлайн-ресурсы, интерактивные занятия и современные методы обучения. Это обеспечивает максимальный комфорт и эффективность учебного процесса для наших студентов.</p>
+      </div>
+    </div>
+    <div class="inner_card py-5">
+      <div class="inner_content">
+        <h1>Сообщество и Сеть</h1>
+        <p>Мы создаем образовательное сообщество, где студенты могут обмениваться опытом, создавать контакты и расширять свои горизонты. Наш университет поддерживает взаимодействие между студентами и преподавателями, способствуя общественной активности и креативному обмену идеями.</p>
+      </div>
+      <div class="w-50"></div>
+    </div>
+  </div>
+  <div class="wrapper_five container py-5">
+    <div class="title">
+      <h1>Оставьте заявку и получите <span>бесплатную консультацию</span></h1>
+      <p>Мы поможем вам выбрать программу для достижения ваших целей, предоставим информацию о процессе обучения и ответим на все ваши вопросы.</p>
+    </div>
+    <div class="form d-flex flex-column justify-content-start align-items-start">
+      <p>Ваше имя</p>
+      <input type="text" placeholder="Алмаз">
+      <p class="pt-3">Почта</p>
+      <input type="text" placeholder="almaz@gmail.com ">
+      <button class="mt-5">Отправить</button>
+    </div>
+  </div>
+</template>
+
+<script>
+
+export default {
+  name: "landingPage",
+  components: {
+  },
+}
+</script>
+
+<style scoped>
+.w-50 {
+  width: 50%;
+}
+.wrapper_one {
+  height: 1600px;
+
+  .inner_card:nth-child(4) {
+    align-items: center;
+    height: 352px;
+    background: #F5F5F7;
+    border-radius: 40px;
+    svg {
+      height: 352px;
+    }
+    .inner_content {
+      width: 50%;
+    }
+
+    h1 {
+      font-family: Manrope, sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 40px;
+      color: #2D6BBF;
+    }
+    p {
+      font-family: Manrope, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: #4A4562;
+    }
+  }
+
+  .inner_card {
+    width: 100%;
+    display: flex;
+
+    .inner_content {
+      width: 50%;
+    }
+
+    h1 {
+      font-family: Manrope, sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 40px;
+      color: #2D6BBF;
+    }
+    p {
+      font-family: Manrope, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      color: #4A4562;
+    }
+  }
+}
+.wrapper_five {
+  height: 443px;
+  display: flex;
+
+  .title {
+    width: 50%;
+
+    h1 {
+      font-family: Manrope, sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      color: #2D6BBF;
+    }
+    p {
+      font-family: Manrope, sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      color: #434343;
+    }
+  }
+  .form {
+    width: 50%;
+    padding-left: 10%;
+    input {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 16px 24px;
+      gap: 10px;
+      width: 444px;
+      height: 58px;
+      background: #F9F9F9;
+      border: 1px solid #F3F3F3;
+      border-radius: 16px;
+    }
+    p {
+      font-family: Manrope, sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 26px;
+      color: #8E8E93;
+    }
+    button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 32px;
+      gap: 10px;
+      width: 444px;
+      height: 51px;
+      background: #FFA51E;
+      border-radius: 16px;
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+
+}
+</style>
