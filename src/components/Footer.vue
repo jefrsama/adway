@@ -3,31 +3,31 @@
     <div class="wrap container d-flex justify-content-around">
       <div class="inner_card">
         <h3 class="pt-5">Главная</h3>
-        <p class="pt-3">О нас</p>
-        <p>Почему мы?</p>
-        <p>Наши партнеры</p>
-        <p>Рецепты</p>
+        <p class="pt-3"><router-link to="/about" class="nav-link">О нас</router-link></p>
+        <p><a href="#why">Почему мы?</a></p>
+        <p><a href="#partners">Наши партнеры</a></p>
+        <p><a href="#reciepts">Рецепты</a></p>
       </div>
       <div class="inner_card">
-        <h3 class="pt-5">Абитуриентам</h3>
-        <p class="pt-3">Процесс зачисления</p>
-        <p>Дисциплина обучения</p>
-        <p>Профессий</p>
-        <p>Дневник ребенка</p>
+        <h3 class="pt-5"><a href="#applicants">Абитуриентам</a></h3>
+        <p class="pt-3"><a href="#bachelor">Процесс зачисления</a></p>
+        <p><a href="#discipline">Дисциплина обучения</a></p>
+        <p><a href="#profession">Профессий</a></p>
+        <p><a href="#dict">Дневник ребенка</a></p>
       </div>
-      <div class="inner_card">
+      <div class="inner_card" id="contacts">
         <h3 class="pt-5">Контакты</h3>
         <div class="inner_content pt-3">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="#F4F4F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <p>+7 707 967 11 59</p>
+          <a href="tel:+77079671159">+7 707 967 11 59</a>
         </div>
         <div class="inner_content">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.29289 5.29289C3.47386 5.11193 3.72386 5 4 5H20C20.2761 5 20.5261 5.11193 20.7071 5.29289M3.29289 5.29289C3.11193 5.47386 3 5.72386 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.72386 20.8881 5.47386 20.7071 5.29289M3.29289 5.29289L10.5858 12.5857C11.3668 13.3668 12.6332 13.3668 13.4142 12.5857L20.7071 5.29289" stroke="#F4F4F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <p>adway@gmail.com</p>
+          <a href="mailto:adway@gmail.com">adway@gmail.com</a>
         </div>
         <div class="inner_content_logos">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +78,8 @@ export default {
       line-height: 22px;
       color: #C2C2C2;
     }
-    p {
+    p, a {
+      padding: 0;
       font-family: Manrope, sans-serif;
       font-style: normal;
       font-weight: 600;
@@ -125,7 +126,7 @@ export default {
         font-size: 15px;
         line-height: 20px;
       }
-      p {
+      p, a {
         font-weight: 600;
         font-size: 14px;
         line-height: 19px;

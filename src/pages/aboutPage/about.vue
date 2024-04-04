@@ -1,11 +1,21 @@
 <template>
-  <div class="wrapper_one container">
-    <div class="inner_card  py-5">
+  <div class="wrapper w-100 container my-5 m-auto d-flex align-items-center">
+    <img src="@/assets/img/about_one.png" alt="">
+    <div class="title">
+      <h3>ADWAY - ваше будущее начинается здесь и сейчас</h3>
+      <p>Присоединяйтесь к нам в путешествии к знаниям, развитию и успеху!</p>
+      <button>Получить консультацию</button>
+    </div>
+  </div>
+  <div class="wrapper_one container py-5">
+    <div class="inner_card py-5">
       <div class="inner_content">
         <h1>История</h1>
         <p>Наша онлайн площадка является результатом долгого пути развития, начиная с нашей первоначальной платформы "uchitelya.kz". Наш опыт в ведении образовательных ресурсов в Казахстане вдохновил нас создать новую онлайн площадку, предлагающий высококачественное образование.</p>
       </div>
-      <div class="w-50"></div>
+      <div class="w-50">
+        <img style="margin-left: auto;" src="@/assets/img/about_three.png" alt="">
+      </div>
     </div>
     <div class="inner_card py-5">
       <div class="w-50">
@@ -22,8 +32,9 @@
       </div>
       <div class="w-50"></div>
     </div>
-    <div class="inner_card py-5">
+    <div class="inner_card py-5" style="position:relative;">
       <div class="w-50">
+        <img src="@/assets/img/about_4.png" alt="" style="position: absolute; top: -37px;">
       </div>
       <div class="inner_content">
         <h1>Инновации и Технологии</h1>
@@ -65,6 +76,53 @@ export default {
 <style scoped>
 .w-50 {
   width: 50%;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 603px;
+
+  .title {
+    padding-left: 5%;
+
+    h3 {
+      width: 567px;
+      font-family: Manrope, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 55px;
+      letter-spacing: 1px;
+      color: #FFFFFF;
+    }
+    p {
+      font-family: Manrope, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: #FFFFFF;
+    }
+    button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 24px;
+      gap: 10px;
+      width: 289px;
+      height: 55px;
+      background: #FFA51E;
+      border-radius: 12px;
+    }
+  }
+  img {
+    z-index: -10;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background: none;
+  }
 }
 .wrapper_one {
   height: 1600px;
