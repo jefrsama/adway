@@ -182,13 +182,13 @@
         </div>
       </div>
     </div>
-    <div class="w-100 long-img">
+    <div class="w-100 long-img pt-5">
       <img class="w-100 long-img-main" src="@/assets/img/main_three.png" alt="">
       <img class="w-100 long-img-mobile" src="@/assets/img/main_four.png" alt="">
     </div>
   </div>
 
-  <div class="wrapper_four container py-5 mt-5" id="profession">
+  <div class="wrapper_four container py-5 mt-3" id="profession">
     <div class="title">
       <h1>Выбери профессию по душе</h1>
       <hr>
