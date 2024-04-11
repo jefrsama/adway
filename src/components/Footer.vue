@@ -6,14 +6,12 @@
         <p class="pt-3"><router-link to="/about" class="nav-link">О нас</router-link></p>
         <p><a href="#why">Почему мы?</a></p>
         <p><a href="#partners">Наши партнеры</a></p>
-        <p><a href="#reciepts">Рецепты</a></p>
       </div>
       <div class="inner_card">
         <h3 class="pt-5"><a href="#applicants">Абитуриентам</a></h3>
-        <p class="pt-3"><a href="#bachelor">Процесс зачисления</a></p>
-        <p><a href="#discipline">Дисциплина обучения</a></p>
-        <p><a href="#profession">Профессий</a></p>
-        <p><a href="#dict">Дневник ребенка</a></p>
+        <p class="pt-3"><a href="#process">Процесс зачисления</a></p>
+        <p><a href="#bachelor_magistr">Бакалавр</a></p>
+        <p><a href="#bachelor_magistr">Магистратура</a></p>
       </div>
       <div class="inner_card" id="contacts">
         <h3 class="pt-5">Контакты</h3>
@@ -97,6 +95,43 @@ export default {
   .wrapper-footer {
     width: 100%;
     height: 800px;
+
+    .wrap {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .inner_card {
+      width: 100%;
+      padding-left: 5%;
+
+      h3 {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+      }
+      p, a {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+      }
+
+      .end_footer {
+        p {
+          font-family: Inter, sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 11px;
+          line-height: 17px;
+          color: #C2C2C2;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 430px) {
+  .wrapper-footer {
+    width: 100%;
+    height: 730px;
 
     .wrap {
       display: flex;
