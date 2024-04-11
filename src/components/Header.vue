@@ -2,7 +2,7 @@
   <header class="m-auto container">
     <div class="d-flex justify-content-between align-items-center w-100">
       <div class="logo">
-        <h1><router-link to="/" class="nav-link">LOGO</router-link></h1>
+        <h1><router-link to="/" class="nav-link"><img src="@/assets/img/logo.png" alt="Adway Education"></router-link></h1>
       </div>
       <div>
         <ul class="navbar nav">
@@ -13,7 +13,7 @@
         </ul>
       </div>
       <div>
-        <button>Войти</button>
+        <a href="/my/index.php"><button>Личный кабинет</button></a>
       </div>
     </div>
     <div class="hamburger-menu">
@@ -51,19 +51,21 @@ header {
   button {
     padding: 10px 24px;
     gap: 10px;
-    width: 102px;
     height: 45px;
     background: #2D6BBF;
     border-radius: 12px;
   }
   .logo {
-    width: 76px;
+    width: 200px;
     font-family: Manrope, sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
     line-height: 44px;
     color: #000;
+  }
+  .logo img{
+    width:100%;
   }
   a {
     color: black;
