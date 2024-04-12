@@ -1,6 +1,6 @@
 <template>
   <footer class="wrapper-footer d-flex flex-column justify-content-between">
-    <div class="wrap container d-flex justify-content-around">
+    <div class="wrap container d-flex justify-content-around" id="contacts">
       <div class="inner_card">
         <h3 class="pt-5">Главная</h3>
         <p class="pt-3"><router-link to="/about" class="nav-link">О нас</router-link></p>

@@ -24,8 +24,9 @@
 
       <ul class="menu__box">
         <li><router-link to="/about" class="nav-link">О нас</router-link></li>
-        <li><a class="menu__item" href="#bachelor">Бакалавр</a></li>
-        <li><a class="menu__item" href="#applicants">Абитуриентам</a></li>
+        <li><a class="menu__item" href="#process">Процесс зачисления</a></li>
+        <li><a class="menu__item" href="#applicants">Требования</a></li>
+        <li><a class="menu__item" href="#profession">Специальности</a></li>
         <li><a class="menu__item" href="#contacts">Контакты</a></li>
       </ul>
     </div>
@@ -93,8 +94,8 @@ header {
 
   .menu__btn {
     display: none;
-    align-items: center;
     position: fixed;
+    align-items: center;
     top: 25px;
     right: 20px;
     width: 26px;
@@ -171,8 +172,8 @@ header {
     justify-content: space-between;
     text-align: center;
     height: 70px;
-    width: 390px;
-    position: relative;
+    width: 100%;
+    position: fixed;
 
     li {
       display: none;
@@ -199,6 +200,7 @@ header {
 
     #menu__toggle:checked ~ .menu__btn > span {
       transform: rotate(45deg);
+
     }
     #menu__toggle:checked ~ .menu__btn > span::before {
       top: 0;

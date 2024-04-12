@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header/>
-    <router-view></router-view>
+    <router-view @hook:mounted="handleRouteMounted"></router-view>
     <Footer/>
   </div>
 </template>
@@ -12,7 +12,21 @@ import Footer from "@/components/Footer.vue";
 
 import {defineComponent} from "vue";
 export default defineComponent({
-  components: { Footer, Header}
+  components: { Footer, Header},
+
+  methods: {
+    handleRouteMounted() {
+      this.$nextTick(() => {
+        const { hash } = this.$route;
+        if (hash) {
+          const element = document.querySelector(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    }
+  }
 })
 </script>
 

@@ -6,10 +6,10 @@
       <div class="title">
         <h3>ADWAY - ваше будущее начинается здесь и сейчас</h3>
         <p>Присоединяйтесь к нам в путешествии к знаниям, развитию и успеху!</p>
-        <button>Получить консультацию</button>
+        <a href="#application"><button>Получить консультацию</button></a>
       </div>
     </div>
-    <div class="wrapper_one container" id="why">
+    <div class="wrapper_one m-auto container" id="why">
       <div class="title">
         <h1>Почему мы?</h1>
         <hr>
@@ -92,58 +92,80 @@
         </swiper>
       </div>
     </div>
-    <div class="wrapper_two container pt-5" id="bachelor">
-      <div class="title mb-5">
+
+    <div class="wrapper_two container pt-5" id="process">
+      <div class="title mb-2">
         <h1>Процесс зачисления</h1>
         <hr>
       </div>
       <div class="wrap w-100 d-flex justify-content-between align-items-center">
         <div class="inner_card">
-          <h1>01</h1>
           <div class="card_inner">
-            <h3>Оставить заявку</h3>
-            <p>Заполните форму и начните обучение у нас</p>
+            <div>
+              <h1>1</h1>
+            </div>
+            <div class="pt-3">
+              <h3>Оставить заявку</h3>
+              <p>Заполните форму и начните обучение у нас</p>
+            </div>
           </div>
         </div>
         <div class="inner_card">
-          <h1>02</h1>
           <div class="card_inner">
-            <h3>Cвязь с менеджером</h3>
-            <p>Наши менеджеры помогут ответить на ваши вопросы</p>
+            <div>
+              <h1>2</h1>
+            </div>
+            <div class="pt-3">
+              <h3>Cвязь с менеджером</h3>
+              <p>Наши менеджеры помогут ответить на ваши вопросы</p>
+            </div>
           </div>
         </div>
         <div class="inner_card">
-          <h1>03</h1>
           <div class="card_inner">
-            <h3>Подача заявления</h3>
-            <p>Следуйте инструкциям для подачи заявления</p>
+            <div>
+              <h1>3</h1>
+            </div>
+            <div class="pt-3">
+              <h3>Подача заявления</h3>
+              <p>Следуйте инструкциям для подачи заявления</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="wrap w-100 d-flex justify-content-around align-items-center py-5">
+      <div class="wrap w-100 d-flex justify-content-around align-items-center">
         <div class="inner_card">
-          <h1>04</h1>
           <div class="card_inner">
-            <h3>Оплата обучения</h3>
-            <p>Выберите удобный способ оплаты</p>
+            <div>
+              <h1>4</h1>
+            </div>
+            <div class="pt-3">
+              <h3>Оплата обучения</h3>
+              <p>Выберите удобный способ оплаты</p>
+            </div>
           </div>
         </div>
         <div class="inner_long_card">
           <img src="@/assets/img/main_two.png" alt="" style="position: absolute; right: 0; z-index: 10; top: 10px">
-          <h1>05</h1>
           <div class="card_inner">
-            <h3>Вы обучаетесь в Satbayev University</h3>
-            <p>Добро пожаловать в Satbayev University!</p>
+            <div>
+              <h1>5</h1>
+            </div>
+            <div class="pt-3">
+              <h3>Вы обучаетесь в Satbayev University</h3>
+              <p>Добро пожаловать в Satbayev University!</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="wrapper_three container py-5" id="applicants">
+
+    <div class="wrapper_three container" id="applicants">
       <div class="title">
         <h1>Требования от абитуриента</h1>
         <hr>
       </div>
-      <div class="pt-3 w-100 d-flex">
+      <div class="pt-3 d-flex">
         <div class="icon" style="width: 40%">
           <img src="@/assets/img/main_five.png" alt="">
         </div>
@@ -182,25 +204,45 @@
           </div>
         </div>
       </div>
-      <div class="w-100 long-img pt-5" id="bachelor_magistr">
+      <div class="container m-auto long-img pt-2" id="bachelor_magistr">
         <swiper
             :modules="modules"
             :slides-per-view="1"
-            :space-between="20"
             @swiper="onSwiper"
             @slideChange="onSlideChange"
         >
           <swiper-slide>
             <img class="w-100 long-img-main" src="@/assets/img/main_three.png" alt="">
-            <img class="w-100 long-img-mobile" src="@/assets/img/main_four.png" alt="">
+            <div class="long-img-mobile">
+              <div class="icons">
+                <div class="inner_icons"><span>Магистратура</span></div>
+                <div class="inner_icons"><span>Бакалавр</span></div>
+              </div>
+              <div class="title">
+                <h3>Data science</h3>
+                <p>Программа Data Science открывает перед выпускниками множество карьерных возможностей в таких областях как IT, финансы, здравоохранение, маркетинг, наука о данных и многих других.</p>
+              </div>
+              <img class="long-img-mobile-human" src="@/assets/img/man.png" alt="">
+            </div>
           </swiper-slide>
           <swiper-slide>
             <img class="w-100 long-img-main" src="@/assets/img/main_three2.png" alt="">
+            <div class="long-img-mobile">
+              <div class="icons">
+                <div class="inner_icons"><span>Магистратура</span></div>
+                <div class="inner_icons"><span>Бакалавр</span></div>
+              </div>
+              <div class="title">
+                <h3>Информационная безопасность </h3>
+                <p>Программа Data Science открывает перед выпускниками множество карьерных возможностей в таких областях как IT, финансы, здравоохранение, маркетинг, наука о данных и многих других.</p>
+              </div>
+              <img class="long-img-mobile-human" src="@/assets/img/woman.png" alt="">
+            </div>
           </swiper-slide>
         </swiper>
-
       </div>
     </div>
+
     <div class="wrapper_four container py-5 mt-3" id="profession">
       <div class="title">
         <h1>Выбери профессию по душе</h1>
@@ -275,7 +317,8 @@
         </div>
       </div>
     </div>
-    <div class="wrapper_five container py-5">
+
+    <div class="wrapper_five container py-5" id="application">
       <div class="title">
         <h1>Оставьте заявку и получите <span>бесплатную консультацию</span></h1>
         <p>Мы поможем вам выбрать программу для достижения ваших целей, предоставим информацию о процессе обучения и ответим на все ваши вопросы.</p>
