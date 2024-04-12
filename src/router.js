@@ -4,12 +4,12 @@ import Home from '@/pages/landing/landing.vue';
 
 const routes = [
     {
-        path: '/',
+        path: '/theme/space/dist/',
         name: 'Home',
         component: Home
     },
     {
-        path: '/about',
+        path: '/theme/space/dist/about',
         name: 'About',
         component: About
     }

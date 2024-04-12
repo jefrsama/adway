@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <div class="wrapper w-100 container my-5 m-auto d-flex align-items-center">
+    <div class="wrapper w-100 container mt-3 m-auto d-flex align-items-center">
       <img class="main" src="@/assets/img/about_one.png" alt="">
       <img class="mobile" src="@/assets/img/mainmobile.png" alt="">
       <div class="title">

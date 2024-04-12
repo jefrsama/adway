@@ -2,12 +2,12 @@
   <header class="m-auto container">
     <div class="d-flex justify-content-between align-items-center w-100">
       <div class="logo">
-        <h1><router-link to="/" class="nav-link"><img src="@/assets/img/logo.png" alt="Adway Education"></router-link></h1>
+        <h1><router-link to="/theme/space/dist/" class="nav-link"><img src="@/assets/img/logo.png" alt="Adway Education"></router-link></h1>
       </div>
       <div>
         <ul class="navbar nav">
-          <li class="nav-item"><router-link to="/about" class="nav-link">О нас</router-link></li>
-          <li class="nav-item"><a href="#bachelor" class="nav-link">Бакалавр</a></li>
+          <li class="nav-item"><router-link to="/theme/space/dist/about" class="nav-link">О нас</router-link></li>
+          <li class="nav-item"><a href="#bachelor_magistr" class="nav-link">Бакалавр</a></li>
           <li class="nav-item"><a href="#applicants" class="nav-link">Абитуриентам</a></li>
           <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
         </ul>
